@@ -1,6 +1,8 @@
+// 1. event trigger
 function throttle (fn, interval) {
-    let __self = fn;
-    let firstTime = true;
+    var __self = fn;
+    var firstTime = true;
+    var timer = null;
 
     return function () {
         var args = arguments;
